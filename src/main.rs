@@ -25,6 +25,12 @@ mod variables;
 #[path = "./variables-data-types/variables_data_types.rs"]
 mod variables_data_types;
 
+#[path = "./test-example/add.rs"]
+mod add;
+
+#[path = "./match-example/match_example.rs"]
+mod match_example;
+
 fn main() {
     push_struct_to_vector::push_struct_to_vector();
 
@@ -43,4 +49,8 @@ fn main() {
     variables::variables();
 
     variables_data_types::variables_data_types();
+
+    add::add(1, 2);
+
+    match_example::match_example(2);
 }
