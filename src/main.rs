@@ -31,6 +31,12 @@ mod add;
 #[path = "./match-example/match_example.rs"]
 mod match_example;
 
+#[path = "./generics/generics.rs"]
+mod generics;
+
+#[path = "./enums/enum_algebra.rs"]
+mod enums;
+
 fn main() {
     push_struct_to_vector::push_struct_to_vector();
 
@@ -53,4 +59,12 @@ fn main() {
     add::add(1, 2);
 
     match_example::match_example(2);
+
+    //Generics
+    println!("{}", generics::sum(4, 4));
+    println!("{}", generics::sum(3.5, 2.6));
+
+    //Enums
+    println!("{}", enums::anum_algebra());
+
 }
